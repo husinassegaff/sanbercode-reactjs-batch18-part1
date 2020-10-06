@@ -1,63 +1,115 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'rel='stylesheet' type='text/css'>
-	<title></title>
-	<style>
-		section {
-			clear: both;			
-			padding: 10px;
-			display: inline-block;
-			width: 100%;
-			clear: both;
-			box-sizing: border-box;
-        }
-        
-        h4{
-            color: white;
-        }
+  <title>no 11</title>
+  <style>
+    .page {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: flex;
+      font-weight: 400;
+    }
+    .page article p{
+      width: 45%;
+      margin-left: 20px;
+      display: inline-block;
+    }
+    .page article {
+      margin-bottom: 8em;
+    }
+    .page h1 {
+      font-size: 50px;
+      line-height: 1;
+      margin-bottom: .6em;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+    .page h2 {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .page p {
+      font-size: 16px;
+      line-height: 1.8em;
+      margin-bottom: 1.5em;
+    }
+    .page .content {
+      width: 60%;
+      margin-right: 5%;
+      padding: 5%;
+      padding-top: 100px;
+      position: absolute;
+      left: 25%;
+    }
+    .page .navigation {
+      width: 15%;
+      padding: 5% 5%;
+      background: #2e2e2e;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 85%;
+      overflow: auto;
+    }
+    .page .navigation h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .page .navigation ul {
+      margin-bottom: 70px;
+    }
+    .page .navigation a {
+      color: #777;
+      text-decoration: none;
+      display: block;
+      padding: 12px 12px;
+      outline: 0;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
 
-		div {
-			float: left;
-		}
+    .page .navigation a:active {
+      color: #fff;
+    }
 
-		.div-1 {
-			width: 50%;
-			height: 400px;
-			background: black;
-		}
+    img.header{
+      width: 50%;
+      display: inline-block;
+    }
 
-		.div-2 {
-			width: 50%;
-			height: 200px;
-		}
-	</style>
+    h1{
+      margin: 0;
+    }
+
+    .text-center{
+      text-align: center;
+    }
+
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<section>		
-		<div class="div-1">
-            <h4>LIST BUAH</h4>
-            <a href="#">Semangka</a><br>
-            <a href="#">Jeruk</a><br>
-            <a href="#">Mangga</a><br>
-            <a href="#">Anggur</a><br>
-            <a href="#">Apel</a><br>
-        </div>
-		<div class="div-2">
-            <h1>Strawberry</h1>
-            <img src="https://images.pexels.com/photos/46174/strawberries-berries-fruit-freshness-46174.jpeg" height="200" width="300">
-            <p>
-                <b>Strawberry</b> adalah buah yang sering<br>
-                digunakan sebagai pelengkap dalam<br>
-                hidangan kue atau makanan dan minuman<br>
-                lainnya yang berbahan dasar buah-buahan.<br>
-                Hal ini dikarenakan buah strawberry<br>
-                memiliki warna merah yang sangat pekat,<br>
-                sehingga menjadikan beberapa orang<br>
-                menggunakan strawberry sebagai penghias<br>
-                makanan
-            </p>
-        </div>
-	</section>
+  <div class="page">
+    <div class="navigation">
+      <h2>List Buah</h2>
+      <ul>
+        <li><a href="#">Semangka</a></li>
+        <li><a href="#">Jeruk</a></li>
+        <li><a href="#">Mangga</a></li>
+        <li><a href="#">Anggur</a></li>
+        <li><a href="#">Apel</a></li>
+      </ul>   
+    </div>
+    <div class="content">
+      <article>
+        <h1>Strawberry</h1>
+        <img class="header" src="https://images.pexels.com/photos/46174/strawberries-berries-fruit-freshness-46174.jpeg"/>
+        <p>
+          <strong>Strawberry</strong> adalah buah yang sering digunakan sebagai pelengkap dalam hidangan kue atau makanan dan minuman lainnya yang berbahan dasar buah-buahan. Hal ini dikarenakan buah strawberry memiliki warna merah yang sangat pekat, sehingga menjadikan beberapa orang menggunakan strawberry sebagai penghias makanan</p>
+      </article>
+    </div>
+  </div>
 </body>
 </html>
